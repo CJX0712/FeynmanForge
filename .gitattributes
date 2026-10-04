@@ -1,0 +1,8 @@
+# 统一换行符为 LF，跨平台一致
+* text=auto eol=lf
+*.py text
+*.json text
+*.md text
+*.txt text
+*.yml text
+*.toml text

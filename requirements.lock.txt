@@ -1,0 +1,9 @@
+# FeynmanForge 锁定依赖清单（Locked Dependency List）
+# 生成环境：Windows 11 / Python 3.13.12 / cp313 wheel
+# 校验：pip install -r requirements.lock.txt 后 `pytest -q` 全绿。
+# 跨平台说明：以下为纯 Python + 编译好的 wheel（numpy/scipy/scikit-learn 均有
+# cp312/cp313 的 win/linux/macos wheel），无需本地编译工具链即可安装。
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+sympy==1.14.0

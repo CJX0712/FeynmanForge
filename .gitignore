@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+*.so
+build/
+dist/
+.venv/
+venv/
+env/
+.env
+benchmark_full.json
+# 本地临时产物（保留仓库内 benchmark.json 作为证据，但忽略临时副本）
+/tmp/
