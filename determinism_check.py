@@ -1,7 +1,6 @@
 """确定性验证：同配置两次运行，核心指标逐位一致（忽略墙钟耗时字段）。"""
 import json
 import subprocess
-import sys
 
 VENV = "C:/Users/Administrator/.workbuddy/binaries/python/envs/feynmanforge/Scripts/python.exe"
 
@@ -13,8 +12,10 @@ def run(out):
 run("/tmp/d1.json")
 run("/tmp/d2.json")
 
-a = json.load(open("/tmp/d1.json", encoding="utf-8"))
-b = json.load(open("/tmp/d2.json", encoding="utf-8"))
+with open("/tmp/d1.json", encoding="utf-8") as f:
+    a = json.load(f)
+with open("/tmp/d2.json", encoding="utf-8") as f:
+    b = json.load(f)
 
 
 def strip(d):
